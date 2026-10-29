@@ -1,0 +1,341 @@
+
+/* ========================================
+   PROJECTS SECTION
+======================================== */
+
+.projects-section {
+  padding: 7rem 8%;
+  background: #0e0f14;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.projects-container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+/* ========================================
+   SECTION HEADING
+======================================== */
+
+.section-heading {
+  max-width: 650px;
+  margin-bottom: 3rem;
+}
+
+.section-eyebrow {
+  margin-bottom: 1rem;
+  color: #b9ff39;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+}
+
+.section-heading h2 {
+  margin: 0;
+  color: #f5f5f7;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1.1;
+  letter-spacing: -0.055em;
+}
+
+.section-heading h2 span {
+  color: #b9ff39;
+}
+
+.section-description {
+  max-width: 520px;
+  margin-top: 1.2rem;
+  color: #9294a1;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* ========================================
+   PROJECT GRID
+======================================== */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.2rem;
+  align-items: stretch;
+}
+
+/* ========================================
+   PROJECT CARD
+======================================== */
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 1.4rem;
+  border: 1px solid #292a32;
+  border-radius: 18px;
+  background: linear-gradient(145deg, #15161d, #101116);
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(139, 156, 255, 0.5);
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.22);
+}
+
+/* ========================================
+   PROJECT IMAGE — WEB PROJECTS
+======================================== */
+
+.project-image {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  border: 1px solid #292a32;
+  border-radius: 12px;
+  background: #111218;
+}
+
+.project-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform 0.45s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.04);
+}
+
+/* ========================================
+   MOBILE APP IMAGES
+   Fit the complete phone screenshot
+======================================== */
+
+.project-image-mobile {
+  aspect-ratio: 16 / 10;
+  background: #111218;
+}
+
+.project-image-mobile img {
+  object-fit: contain;
+  object-position: center center;
+}
+
+/* ========================================
+   PROJECT NUMBER AND STATUS
+======================================== */
+
+.project-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  margin-bottom: 2rem;
+}
+
+.project-number {
+  color: #777b89;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.project-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #30313b;
+  border-radius: 999px;
+  color: #c6c7d0;
+  font-size: 0.68rem;
+  white-space: nowrap;
+}
+
+.project-status-dot {
+  width: 6px;
+  height: 6px;
+  flex-shrink: 0;
+  border-radius: 50%;
+}
+
+.status-live .project-status-dot {
+  background: #b9ff39;
+  box-shadow: 0 0 8px rgba(185, 255, 57, 0.4);
+}
+
+.status-progress .project-status-dot {
+  background: #8b9cff;
+  box-shadow: 0 0 8px rgba(139, 156, 255, 0.4);
+}
+
+/* ========================================
+   PROJECT DETAILS
+======================================== */
+
+.project-category {
+  margin-bottom: 0.65rem;
+  color: #8b9cff;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.project-card h3 {
+  margin: 0;
+  color: #f5f5f7;
+  font-size: 1.6rem;
+  letter-spacing: -0.04em;
+}
+
+.project-description {
+  margin-top: 1rem;
+  color: #9294a1;
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+/* ========================================
+   TECHNOLOGY TAGS
+======================================== */
+
+.project-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.project-stack span {
+  padding: 0.4rem 0.55rem;
+  border: 1px solid #292a32;
+  border-radius: 6px;
+  color: #b9bac4;
+  font-size: 0.7rem;
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.project-card:hover .project-stack span {
+  border-color: #383a46;
+}
+
+/* ========================================
+   PROJECT LINKS
+======================================== */
+
+.project-card-footer {
+  margin-top: auto;
+  padding-top: 2rem;
+}
+
+.project-link,
+.project-coming-soon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.project-link {
+  color: #b9ff39;
+  transition:
+    color 0.2s ease,
+    gap 0.2s ease;
+}
+
+.project-link:hover {
+  gap: 0.8rem;
+  color: #d5ff85;
+}
+
+.project-coming-soon {
+  color: #9294a1;
+  font-weight: 400;
+}
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 1000px) {
+  .projects-section {
+    padding-right: 6%;
+    padding-left: 6%;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 650px) {
+  .projects-section {
+    padding: 4.5rem 6%;
+  }
+
+  .section-heading {
+    margin-bottom: 2rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .project-card {
+    padding: 1.2rem;
+  }
+
+  .project-card-top {
+    margin-bottom: 1.6rem;
+  }
+
+  .project-image {
+    aspect-ratio: 16 / 9;
+    margin-bottom: 1.2rem;
+  }
+
+  .project-image-mobile {
+    aspect-ratio: 4 / 5;
+  }
+
+  .project-image-mobile img {
+    object-fit: contain;
+  }
+}
+
+/* ========================================
+   ACCESSIBILITY
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .project-card,
+  .project-image img,
+  .project-stack span,
+  .project-link {
+    transition: none;
+  }
+
+  .project-card:hover {
+    transform: none;
+  }
+
+  .project-card:hover .project-image img {
+    transform: none;
+  }
+}

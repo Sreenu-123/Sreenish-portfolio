@@ -1,0 +1,70 @@
+
+/* ========================================
+   SREENISH HARI — PORTFOLIO APP STYLES
+   ======================================== */
+
+/* Global app container */
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Main content */
+
+main {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Smooth anchor navigation */
+
+section[id] {
+  scroll-margin-top: 90px;
+}
+
+/* Selection highlight */
+
+::selection {
+  color: #0b0c10;
+  background: #b9ff39;
+}
+
+/* Accessible keyboard focus */
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #b9ff39;
+  outline-offset: 4px;
+}
+
+/* Prevent media overflow */
+
+img,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+/* Responsive container safety */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reduced motion accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

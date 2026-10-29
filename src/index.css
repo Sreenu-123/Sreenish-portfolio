@@ -1,0 +1,167 @@
+
+/* ========================================
+   SREENISH HARI — GLOBAL STYLES
+   ======================================== */
+
+:root {
+  /* Brand colors */
+  --bg: #0b0c10;
+  --bg-secondary: #111218;
+  --surface: #15161d;
+  --surface-hover: #1b1d27;
+
+  --text: #a1a1aa;
+  --text-primary: #f5f5f7;
+  --text-muted: #737784;
+
+  --accent: #b9ff39;
+  --accent-blue: #8b9cff;
+
+  --border: #292a32;
+  --border-hover: #424451;
+
+  /* Effects */
+  --shadow:
+    0 20px 60px rgba(0, 0, 0, 0.3);
+  --glow-lime:
+    0 0 30px rgba(185, 255, 57, 0.12);
+  --glow-blue:
+    0 0 35px rgba(139, 156, 255, 0.1);
+
+  /* Typography */
+  --sans:
+    Inter, ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: var(--text-primary);
+  background: var(--bg);
+  color-scheme: dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  scroll-behavior: smooth;
+}
+
+/* Reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  min-height: 100%;
+  scroll-padding-top: 90px;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  color: var(--text-primary);
+  background:
+    radial-gradient(
+      ellipse at 80% 15%,
+      rgba(139, 156, 255, 0.055),
+      transparent 38%
+    ),
+    var(--bg);
+}
+
+/* Root application */
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Typography */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  color: var(--text-primary);
+  font-family: var(--sans);
+}
+
+p {
+  margin-top: 0;
+}
+
+a {
+  color: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Links and keyboard accessibility */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+/* Text selection */
+
+::selection {
+  color: var(--bg);
+  background: var(--accent);
+}
+
+/* Smooth scrolling preference */
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Smaller screens */
+
+@media (max-width: 768px) {
+  :root {
+    font-size: 15px;
+  }
+}
