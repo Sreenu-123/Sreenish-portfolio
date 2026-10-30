@@ -1,8 +1,8 @@
-# Sreenish Hari — Developer Portfolio
 
+# Sreenish Hari — Developer Portfolio
+<img width="1710" height="951" alt="Screenshot 2026-10-30 at 7 47 28 AM" src="https://github.com/user-attachments/assets/beed91ab-fcd7-41c7-999d-9009582bf72d" />
 <p align="center">
-  <img src="public/images/profile.jpeg" alt="Sreenish Hari" width="140" style="border-radius: 50%;" />
-</p>
+  
 
 <h3 align="center">Building Ideas Into Digital Experiences.</h3>
 
