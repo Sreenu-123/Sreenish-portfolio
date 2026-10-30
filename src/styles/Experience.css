@@ -1,0 +1,416 @@
+/* ========================================
+   EXPERIENCE SECTION
+======================================== */
+
+.experience-section {
+  position: relative;
+  overflow: hidden;
+  padding: 8rem 8%;
+  background: #0e0f14;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.experience-container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+/* ========================================
+   HEADING
+======================================== */
+
+.experience-heading {
+  max-width: 750px;
+  margin-bottom: 4rem;
+}
+
+.experience-heading h2 {
+  margin: 0;
+  color: #f5f5f7;
+  font-size: clamp(2.7rem, 5vw, 4.5rem);
+  line-height: 1.08;
+  letter-spacing: -0.06em;
+}
+
+.experience-heading h2 span {
+  color: #b9ff39;
+}
+
+.experience-description {
+  max-width: 540px;
+  margin-top: 1.3rem;
+  color: #9294a1;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* ========================================
+   MAIN LAYOUT
+======================================== */
+
+.experience-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: stretch;
+  gap: 2rem;
+}
+
+/* ========================================
+   TIMELINE
+======================================== */
+
+.experience-timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-left: 2.5rem;
+}
+
+.experience-timeline::before {
+  position: absolute;
+  top: 2rem;
+  bottom: 2rem;
+  left: 8px;
+  width: 1px;
+  background: linear-gradient(
+    to bottom,
+    #b9ff39,
+    rgba(139, 156, 255, 0.4),
+    transparent
+  );
+  content: '';
+}
+
+/* ========================================
+   TIMELINE CARDS
+======================================== */
+
+.experience-card {
+  position: relative;
+  min-width: 0;
+  padding: 2rem;
+  border: 1px solid #292a32;
+  border-radius: 18px;
+  background: linear-gradient(
+    145deg,
+    #171820,
+    #111218
+  );
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.experience-card:hover {
+  transform: translateX(6px);
+  border-color: rgba(185, 255, 57, 0.4);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
+}
+
+/* MARKER */
+
+.experience-marker {
+  position: absolute;
+  top: 2rem;
+  left: -2.5rem;
+  display: grid;
+  place-items: center;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #b9ff39;
+  border-radius: 50%;
+  background: #0e0f14;
+  box-shadow: 0 0 15px rgba(185, 255, 57, 0.2);
+}
+
+.experience-marker span {
+  color: #b9ff39;
+  font-size: 0;
+}
+
+/* CARD CONTENT */
+
+.experience-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-bottom: 1.7rem;
+}
+
+.experience-type {
+  color: #b9ff39;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+}
+
+.experience-period {
+  padding: 0.45rem 0.7rem;
+  border: 1px solid #343640;
+  border-radius: 999px;
+  color: #a1a1aa;
+  font-size: 0.68rem;
+}
+
+.experience-card h3 {
+  margin: 0;
+  color: #f5f5f7;
+  font-size: clamp(1.2rem, 2vw, 1.55rem);
+  line-height: 1.4;
+  letter-spacing: -0.035em;
+}
+
+.experience-organization {
+  margin-top: 0.7rem;
+  color: #8b9cff;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.experience-card-description {
+  margin-top: 1rem;
+  color: #9294a1;
+  font-size: 0.88rem;
+  line-height: 1.85;
+}
+
+/* ========================================
+   CURRENT FOCUS PANEL
+======================================== */
+
+.experience-focus {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-width: 0;
+  padding: 2.2rem;
+  border: 1px solid rgba(139, 156, 255, 0.25);
+  border-radius: 20px;
+  background:
+    radial-gradient(
+      circle at 100% 0%,
+      rgba(139, 156, 255, 0.12),
+      transparent 45%
+    ),
+    linear-gradient(145deg, #171820, #101116);
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.experience-focus:hover {
+  transform: translateY(-5px);
+  border-color: rgba(139, 156, 255, 0.5);
+  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.25);
+}
+
+.focus-top {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.focus-icon {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(185, 255, 57, 0.3);
+  border-radius: 12px;
+  background: rgba(185, 255, 57, 0.07);
+  color: #b9ff39;
+  font-size: 1.3rem;
+}
+
+.focus-label {
+  color: #8b9cff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+}
+
+.experience-focus h3 {
+  margin-top: 2.2rem;
+  color: #f5f5f7;
+  font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+  line-height: 1.3;
+  letter-spacing: -0.045em;
+}
+
+.experience-focus h3 span {
+  color: #b9ff39;
+}
+
+.focus-description {
+  margin-top: 1rem;
+  color: #9294a1;
+  font-size: 0.9rem;
+  line-height: 1.85;
+}
+
+.focus-divider {
+  height: 1px;
+  margin: 2rem 0;
+  background: #292a32;
+}
+
+.focus-subtitle {
+  margin-bottom: 1rem;
+  color: #777b89;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.focus-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.focus-tags span {
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #30313b;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.02);
+  color: #d0d1da;
+  font-size: 0.75rem;
+  transition:
+    border-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.focus-tags span:hover {
+  transform: translateY(-3px);
+  border-color: rgba(185, 255, 57, 0.45);
+  color: #b9ff39;
+}
+
+.focus-bottom {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: auto;
+  padding-top: 2.5rem;
+  color: #9294a1;
+  font-size: 0.75rem;
+}
+
+.focus-status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #b9ff39;
+  box-shadow: 0 0 10px rgba(185, 255, 57, 0.5);
+}
+
+/* ========================================
+   ENTRANCE ANIMATION
+======================================== */
+
+@keyframes experience-enter {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.experience-card,
+.experience-focus {
+  animation: experience-enter 0.7s ease both;
+}
+
+.experience-card:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.experience-focus {
+  animation-delay: 0.3s;
+}
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 950px) {
+  .experience-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-focus {
+    min-height: 400px;
+  }
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 650px) {
+  .experience-section {
+    padding: 5rem 6%;
+  }
+
+  .experience-heading {
+    margin-bottom: 2.5rem;
+  }
+
+  .experience-timeline {
+    gap: 1.2rem;
+    padding-left: 2rem;
+  }
+
+  .experience-marker {
+    left: -2rem;
+  }
+
+  .experience-card {
+    padding: 1.4rem;
+  }
+
+  .experience-card-top {
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 1.2rem;
+  }
+
+  .experience-focus {
+    min-height: auto;
+    padding: 1.6rem;
+  }
+
+  .focus-bottom {
+    padding-top: 2rem;
+  }
+}
+
+/* ========================================
+   ACCESSIBILITY
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .experience-card,
+  .experience-focus {
+    animation: none;
+    transition: none;
+  }
+
+  .experience-card:hover,
+  .experience-focus:hover,
+  .focus-tags span:hover {
+    transform: none;
+  }
+}
