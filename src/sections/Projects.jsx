@@ -1,4 +1,3 @@
-
 import '../styles/Projects.css';
 
 const projects = [
@@ -49,6 +48,18 @@ const projects = [
     image: '/images/ironvault.png',
     link: 'https://ironvault-gym-website.vercel.app',
     linkLabel: 'View Live Project',
+  },
+  {
+    number: '05',
+    name: 'SplitMate',
+    category: 'EXPENSE SHARING MOBILE APP',
+    status: 'In Development',
+    description:
+      'An expense-sharing app that helps users manage groups, track shared expenses, calculate balances, and manage settlements.',
+    stack: ['Flutter', 'Dart'],
+    image: '/images/splitmate.png',
+    link: null,
+    linkLabel: null,
   },
 ];
 
